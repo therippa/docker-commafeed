@@ -9,7 +9,8 @@ HEALTHCHECK --start-period=30s \
 RUN echo Installing packages && \
     apk add --no-cache \
             bash \
-            wget
+            wget \
+            curl
 
 RUN COMMAFEED_VERSION=2.4.0 && \
     \
